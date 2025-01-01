@@ -268,6 +268,7 @@ def handle_errors(func):
 
 
 def validate_and_get_provider(config, require_org=True, require_project=False):
+    active_provider = "claude.ai"
     """
     Validates the configuration for the presence of an active provider and session key,
     and optionally checks for an active organization ID and project ID. If validation passes,
